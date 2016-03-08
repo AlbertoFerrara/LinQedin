@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserMainWindow</class>
+ <widget class="QWidget" name="UserMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>980</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>980</width>
+    <height>597</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>980</width>
+    <height>597</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>HomePage Utente</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #0082b6;</string>
+  </property>
+  <widget class="QLabel" name="welcomeLabel">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>1</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;s
+font: 14pt &quot;.Helvetica Neue DeskInterface&quot;;
+</string>
+   </property>
+   <property name="text">
+    <string>Benvenuto nella tua pagina personale:</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="formGroupBoxFind">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(78, 155, 209);
+border-radius: 10px 10px 10px 10px;
+border: 1px solid black;</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="fieldGrowthPolicy">
+     <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="cercaUnaPersonaLabel">
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Cerca una persona nel DB:                 </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="FindAPersonText">
+      <property name="styleSheet">
+       <string notr="true">background-color:white;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="formGroupBoxInsert">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(78, 155, 209);
+border-radius: 10px 10px 10px 10px;
+border: 1px solid black;</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <property name="fieldGrowthPolicy">
+     <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+    </property>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="addFriendTextLine">
+      <property name="styleSheet">
+       <string notr="true">background-color:white;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="cercaUnaPersonaLabel_2">
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Inserisci una persona alla tua rete:      </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="formGroupBoxRemove">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>401</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(78, 155, 209);
+border-radius: 10px 10px 10px 10px;
+border: 1px solid black;</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout_3">
+    <property name="fieldGrowthPolicy">
+     <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="rimuoviUnaPersonaLabel">
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Rimuovi una persona dalla tua rete:   </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="rimuoviUnaPersonaLineEdit">
+      <property name="styleSheet">
+       <string notr="true">background-color:white;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="formGroupBoxModifyProfile">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>410</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(78, 155, 209);
+border-radius: 10px 10px 10px 10px;
+border: 1px solid black;</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout_4">
+    <property name="fieldGrowthPolicy">
+     <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="modificaProfiloLabel">
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Modifica il tuo Profilo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="oppureModificaProfiloWidget" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="formGroupBoxShowProfile">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>410</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(78, 155, 209);
+border-radius: 10px 10px 10px 10px;
+border: 1px solid black;</string>
+   </property>
+   <layout class="QFormLayout" name="formLayout_5">
+    <property name="fieldGrowthPolicy">
+     <enum>QFormLayout::FieldsStayAtSizeHint</enum>
+    </property>
+    <item row="0" column="1">
+     <widget class="QWidget" name="showYourProfileWidget" native="true"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="showYourProfileLabel">
+      <property name="styleSheet">
+       <string notr="true">border:none;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>Visualizza il tuo Profilo</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>380</y>
+     <width>611</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>-40</x>
+     <y>50</y>
+     <width>1021</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nameLabel">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>-10</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+font: 25pt;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ModifyYourProfileButton">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>470</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modifica</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ShowYourProfileButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>470</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Visualizza</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>390</y>
+     <width>20</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>-13</x>
+     <y>530</y>
+     <width>1001</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>550</y>
+     <width>115</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Chiudi</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>60</y>
+     <width>20</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addFriendButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>300</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Aggiungi</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="removeANetPersonButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>200</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Rimuovi</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="findAPersonButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>110</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cerca</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="resultTable">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>110</y>
+     <width>321</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:white;</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>nome</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>cognome</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>username</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="showAllContact">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>410</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Visualizza tutti i tuoi amici</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="showMessage">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>320</y>
+     <width>256</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showAllUsers">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>470</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Visualizza tutti gli utenti</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>891</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Le modifiche a gli aggiornamenti vengono salvati automaticamente nel file database XML nel momento in cui viene premuto il pulsante &quot;Chiudi&quot;.</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

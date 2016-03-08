@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user>
+        <name>cristina</name>
+        <surname>carraro</surname>
+        <username>ccarraro</username>
+        <password>ok</password>
+        <indirizzo>via puniga 34</indirizzo>
+        <telefono>3284591431</telefono>
+        <email>stefano.cristina4@gmail.com</email>
+        <contatti></contatti>
+        <tipoutente>3</tipoutente>
+        <esperienzelavorative></esperienzelavorative>
+        <esperienzepersonali></esperienzepersonali>
+        <lingue></lingue>
+        <esperienzedidattiche></esperienzedidattiche>
+    </user>
+</users>
